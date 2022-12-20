@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/header :: header" />
+<title>관리자 에러!!</title>
+<style>
+  .fieldError {
+    border-color: #bd2130;
+  }
+</style>
+</head>
+<body>
+<div class="container" style="max-width: 600px">
+  <div class="py-5 text-center">
+    <h2>에러!!!!</h2>
+  </div>
+  <div>
+    <p>오류 화면 입니다.</p>
+  </div>
+  <a th:href="@{/admin}">메인 화면으로 이동하기</a>
+  <hr class="my-4">
+</div> <!-- /container -->
+</body>
+</html>

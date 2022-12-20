@@ -1,0 +1,12 @@
+.swal2-title {
+  font-size: 20px !important;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+
+div.react-calendar__month-view__weekdays > div:nth-child(1) > abbr{
+  color: red !important;
+}

@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    include: database,file,jpa,jwt,server,springdoc,log,aws
+
+  devtools:
+    restart:
+      enabled: true

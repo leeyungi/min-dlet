@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(min(150px, 32vw));
+  // cursor: pointer;
+
+  .icons {
+    height: 30px;
+    width: 110%;
+    display: flex;
+    justify-content: start;
+    margin-left: -5%;
+
+    .icon {
+      background-color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      border: 1px solid saddlebrown;
+    }
+  }
+
+  .sign-flower {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+
+    .returned-sign {
+      width: 100%;
+      object-fit: contain;
+      margin: auto;
+      color: white;
+      font-size: 20px;
+      position: relative;
+      animation: shake 1.5s;
+      animation-iteration-count: infinite;
+    }
+
+    .normal-sign {
+      width: 100%;
+      object-fit: contain;
+      margin: auto;
+      color: white;
+      font-size: 20px;
+      position: relative;
+    }
+
+    .flower {
+      width: 80;
+    }
+  }
+
+  .btn {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .sign {
+    height: 100px;
+    width: 100px;
+  }
+  .sign_form {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}

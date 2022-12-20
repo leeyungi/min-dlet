@@ -1,0 +1,44 @@
+@import 'assets/styles/main';
+
+.data {
+  overflow: hidden;
+  .cloud2 {
+    position: absolute;
+    right: -20%;
+    top: 15%;
+    z-index: -100;
+  }
+  .cloud1 {
+    position: absolute;
+    right: -20%;
+    bottom: 35%;
+    z-index: -100;
+  }
+  .cloud3 {
+    position: absolute;
+    top: 25%;
+    left: -50%;
+    z-index: -100;
+  }
+}
+@keyframes fadeInLeft1 {
+  0% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0, -500);
+  }
+}
+
+@keyframes fadeInLeft2 {
+  0% {
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0, -500);
+  }
+}

@@ -1,0 +1,137 @@
+@import 'assets/styles/main';
+
+.container {
+  overflow: hidden;
+  .swal2-popup {
+    font-size: 1.6rem !important;
+    font-family: Georgia, serif;
+  }
+  .deck {
+    margin: 15vh 0 0 0;
+    position: absolute;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .petal {
+      text-align: center;
+      touch-action: none;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 50vh;
+      height: 50vh;
+
+      filter: drop-shadow(10px 6px 6px rgba(50, 50, 73, 0.4));
+      .petals {
+        transform: rotate(-20deg);
+        width: 90vw;
+        height: 65vh;
+      }
+    }
+    .contents {
+      .editor {
+        border: 2px solid white;
+        box-shadow: 0px 2px 2px 1px rgb(199, 199, 199) inset;
+        top: 26vh;
+        left: 47%;
+        height: 30vh;
+        width: 70vw;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        padding: 2% 2% 2% 0;
+        margin: 5% 0 0 0;
+        background-color: rgba(255, 255, 255, 0.514);
+        border-radius: 15px;
+        .scrollBar {
+          width: 100%;
+          height: 85%;
+          padding: 0 0 0 2%;
+          overflow-y: scroll;
+          overflow-x: hidden;
+        }
+
+        .scrollBar::-webkit-scrollbar {
+          margin: 0 5px;
+          width: 10px; /* 스크롤바의 너비 */
+        }
+
+        .scrollBar::-webkit-scrollbar-thumb {
+          padding: 0 5px 0 0;
+          height: 30%; /* 스크롤바의 길이 */
+          background: #b9b9b9; /* 스크롤바의 색상 */
+          border-radius: 10px;
+        }
+
+        .header {
+          display: flex;
+          padding: 5px 3% 0 3%;
+          justify-content: space-between;
+          .bin-img {
+            height: 3vh;
+            width: 3vh;
+          }
+          .date {
+            color: gray;
+          }
+          .nation {
+            color: rgb(0, 0, 0);
+          }
+          .nationimg {
+            height: 16px;
+            width: 16px;
+          }
+        }
+        .textarea {
+          padding: 5px;
+          text-align: start;
+          white-space: pre-line;
+        }
+        .default {
+          .upload-image {
+            display: none;
+          }
+          .preview-img {
+            margin: 0 1px 0 0;
+            height: 30vh;
+            width: 50vw;
+            box-shadow: 0px 2px 2px 1px rgb(199, 199, 199) inset;
+            background-color: rgba(255, 255, 255, 0.514);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+        }
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  //
+  .home-btn {
+    position: absolute;
+    width: 12vw;
+    right: 12vw;
+    top: 7vh;
+    padding: 0 0 50px 0;
+    filter: drop-shadow(2px 1px 1px rgba(50, 50, 73, 0.4));
+  }
+  .send-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: #ffffff;
+  }
+}

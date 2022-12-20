@@ -1,0 +1,117 @@
+@import 'assets/styles/main';
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  // background-color: rgba(0, 0, 0, 0.6);
+  button {
+    outline: none;
+    cursor: pointer;
+    border: 0;
+  }
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.title {
+  margin: 10px 0 10px 0;
+}
+
+.modal > section {
+  box-shadow: black;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show 0.3s;
+  overflow: hidden;
+}
+.modal > section > header {
+  position: relative;
+  font-weight: 600;
+  padding: 16px 64px 16px 16px;
+}
+.modal > section > header button {
+  position: absolute;
+  border-radius: 100%;
+  top: 15px;
+  right: 15px;
+  height: 25px;
+  width: 25px;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+}
+
+.modal > section > main {
+  padding: 16px;
+  text-align: center;
+  .nickname {
+    display: flex;
+  }
+  Input {
+    width: 300px;
+    margin: 0 20px 0 0;
+  }
+}
+
+.modal > section > footer {
+  text-align: center;
+}
+.modal > section > footer button {
+  border: 1px solid rgb(182, 182, 182);
+  background-color: rgb(255, 198, 198);
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+}
+
+.openModal {
+  display: flex;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+
+.inputWithBtn {
+  padding: 10px;
+  display: flex;
+}
+.invalidMsg {
+  color: red;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

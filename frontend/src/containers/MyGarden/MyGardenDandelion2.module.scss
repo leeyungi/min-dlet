@@ -1,0 +1,111 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(min(150px, 32vw));
+  // cursor: pointer;
+
+  .icons {
+    height: 30px;
+    width: 110%;
+    display: flex;
+    justify-content: start;
+    margin-left: -5%;
+
+    .icon {
+      background-color: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      border: 1px solid saddlebrown;
+    }
+  }
+
+  .sign-flower {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+
+    .returned-sign {
+      width: 100%;
+      object-fit: contain;
+      margin: auto;
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      position: relative;
+      animation: shake 1.5s;
+      animation-iteration-count: infinite;
+    }
+
+    .normal-sign {
+      width: 100%;
+      font-weight: 700;
+      object-fit: contain;
+      margin: auto;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      position: relative;
+      text-shadow: 2px 2px 2px rgb(168, 168, 168);
+      span {
+        padding: 5px 0 0 5px;
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+
+    .flower {
+      width: 80;
+    }
+  }
+
+  .btn {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .sign {
+    height: 100px;
+    width: 100px;
+  }
+  .sign_form {
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}

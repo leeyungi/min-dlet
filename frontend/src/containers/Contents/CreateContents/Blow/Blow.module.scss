@@ -1,0 +1,38 @@
+@import 'assets/styles/main';
+
+.windGuide {
+  position: absolute;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 40%;
+  color: white;
+  animation: fadein 5s ease-in-out;
+  text-shadow: 2px 2px 6px gray;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.skip {
+  padding: 1vh 3vw;
+  width: auto;
+  z-index: 500;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  font-weight: 600;
+  color: white;
+  border: 2px solid white;
+}

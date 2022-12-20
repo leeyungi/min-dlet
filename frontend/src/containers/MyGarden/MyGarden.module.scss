@@ -1,0 +1,78 @@
+.container {
+  // height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  z-index: -1;
+
+  background-image: url('../../assets/images/garden_back.webp');
+  background-size: cover;
+  padding: 20px;
+  background-position: center;
+  // .inner-container {
+  // }
+}
+.btns {
+  display: inline;
+  text-align: right;
+}
+.btn {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 15px;
+}
+.blank {
+  height: 25%;
+}
+.sign_boxs {
+  position: relative;
+}
+.sign_box_1 {
+  position: fixed;
+  left: 20px;
+  bottom: 43vh;
+  transform: scale(0.85);
+  img {
+    height: 130px;
+    width: 130px;
+  }
+}
+.sign_box_2 {
+  position: fixed;
+  right: 15px;
+  bottom: 37vh;
+  transform: scale(0.88);
+  img {
+    height: 140px;
+    width: 140px;
+  }
+}
+.sign_box_3 {
+  position: fixed;
+  bottom: 24vh;
+  right: 35%;
+  transform: scale(0.92);
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+.sign_box_4 {
+  position: fixed;
+  bottom: 5vh;
+  right: 8px;
+  transform: scaleX(1.1);
+  img {
+    height: 160px;
+    width: 160px;
+  }
+}
+.sign_box_5 {
+  position: fixed;
+  bottom: 0vh;
+  left: 20px;
+  transform: scaleX(1.1);
+  img {
+    height: 170px;
+    width: 170px;
+  }
+}
